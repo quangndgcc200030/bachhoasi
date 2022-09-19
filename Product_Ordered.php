@@ -101,17 +101,4 @@ if (isset($_SESSION['us']) == false) {
 <?php
     }
 }
-if (isset($_POST['btgiveFeed'])) {
-    $idp = $_POST['txtproid'];
-    $idc = $_POST['txtusername'];
-
-    $sq = "SELECT * FROM customer c, feedback f, product p
-            WHERE c.Username = f.Username AND f.ProID = p.ProID
-            AND f.Username = '$idc' AND f.ProID = '$idp'";
-    $result = mysqli_query($conn, $sq) or die('Invalid query: ' . mysqli_error($conn));
-
-    if (mysqli_num_rows($result) == 1) {
-        echo "<script>You gave feedback</script>";
-    }
-}
 ?>

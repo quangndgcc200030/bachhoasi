@@ -140,7 +140,7 @@
                     </ul> -->
                   </div>
                   <div class="product-content1">
-                    <h3 class="title1"><a href="?page=viewdetail&id=<?php echo $row['ProID'] ?>"><?php echo $row['ProName'] ?></a></h3>
+                  <div class="title1 mb-2"><a href="?page=viewdetail&id=<?php echo $row['ProID'] ?>"><strong><?php echo $row['ProName'] ?></strong></a></div>
                     <div class="price1">$<?php echo $row['ProPrice'] ?></div>
                     <form action="?page=cart" method="POST" class="d-flex">
                       <input type="hidden" name="quantity" class="text-center" value="1">
@@ -194,7 +194,7 @@
                   </ul> -->
                 </div>
                 <div class="product-content1">
-                  <h3 class="title1"><a href="?page=viewdetail&id=<?php echo $row['ProID'] ?>"><?php echo $row['ProName'] ?></a></h3>
+                <div class="title1 mb-2"><a href="?page=viewdetail&id=<?php echo $row['ProID'] ?>"><strong><?php echo $row['ProName'] ?></strong></a></div>
                   <div class="price1">$<?php echo $row['ProPrice'] ?></div>
                   <form action="?page=cart" method="POST" class="d-flex">
                     <input type="hidden" name="quantity" class="text-center" value="1">
